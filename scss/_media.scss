@@ -1,7 +1,8 @@
 @media (max-width: 1200px){
     .container{
         max-width: 1000px;
-        padding: 0 20px;
+        position: relative;
+
     }
     .header{
         &__nav-link{
@@ -13,9 +14,15 @@
     }
 }
 
-@media (max-width: 992px){
+@media (max-width: 1050px){
     .container{
         max-width: 940px;
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 85%;
     }
     .header{
         &__nav-links{
@@ -40,20 +47,96 @@
         position: fixed;
         flex-direction: column;
         align-items: center;
-        top: 73px;
         background: #262D33;
+        top: 70px;
         left: 0;
         right: 0;
         bottom: 0;
+        z-index: 100;
+        overflow: auto;
     }
 
     .header__nav-link{
         margin-right: 0;
         margin-bottom: 17px;
     }
+
+    .topic-article{
+        padding: 38px 20px 0px 36px;
+
+        &__title{
+            font-size: 30px;
+            line-height: 40px;
+            max-width: 400px;
+        }
+        &__info {
+            margin-top: 90px;
+        }
+    }
 }
 
-@media (max-width: 768px){
+@media (max-width: 775px){
+    .topic-article{
+        
+
+        &__title {
+        font-size: 24px;
+        line-height: 35px;
+        max-width: 300px;
+        margin-bottom: 30px;
+        }
+    }
+    .recommendation{
+        flex-basis: 240px;
+
+        &__description{
+            font-size: 12px;
+        }
+
+        &__item{
+            padding: 10px 15px 11px;
+            min-height: auto;
+        }
+    }
+
+}
+
+@media (max-width: 680px){
+    .main{
+        height: 490px;
+        &__wrapper{
+            flex-direction: column;
+        }
+    }
+    .recommendation{
+        flex-shrink: 1;
+        flex-basis: auto;
+        order: -1;
+
+        &__list{
+            transition: 1s;
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+            top: 59px;
+            overflow: hidden;
+            height: 0;
+
+            
+        }
+    }
+
+    .recommendation__list--open{
+        height: 100%;
+        background: #fff;
+    }
+
+    .topic-article{
+        padding: 38px 20px 45px 36px;
+        &__info {
+            margin-top: 50px;
+        }
+    }
 
 }
 
@@ -62,9 +145,29 @@
 }
 
 @media (max-width: 480px){
+    .topic-article{
+        &__title {
+            font-size: 20px;
+            line-height: 26px;
+            
+        }
+    }
+    .recommendation{
+        &__title{
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        &__list{
+            top: 42px;
+        }
+    }
 
 }
 
 @media (max-width: 320px){
-
+    .topic-article{
+        &__title {
+            font-size: 18px;
+        }
+    }
 }

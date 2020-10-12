@@ -1,6 +1,11 @@
 .header {
     background: #262D33;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    z-index: 100;
 
     // .header__wrapper
 
@@ -54,7 +59,7 @@
         height: 18px;
         position: absolute;
         background-color: transparent;
-        background: url(../../img/header/Search.svg);
+        background: url(../img/header/search.svg);
         right: 25px;
         top: 50%;
         transform: translateY(-50%);
