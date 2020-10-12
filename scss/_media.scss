@@ -145,7 +145,13 @@
 }
 
 @media (max-width: 480px){
+    .main{
+        &__wrapper{
+            height: 450px;
+        }
+    }
     .topic-article{
+        height: 100%;
         &__title {
             font-size: 20px;
             line-height: 26px;
