@@ -36,3 +36,14 @@ recommendationTitle.addEventListener('click', () => {
     console.log(1);
     recommendationList.classList.toggle('recommendation__list--open')
 })
+
+
+// паралакс эффект
+
+const articleWeeksBg = document.querySelector('.article-weeks__bg')
+
+window.addEventListener('scroll', () => {
+    let value = window.scrollY;
+
+    articleWeeksBg.style.bottom = value * - 0.3 + 'px'
+})

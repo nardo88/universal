@@ -1,0 +1,27 @@
+.article-weeks {
+  width: 100%;
+  height: 270px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.article-weeks__bg {
+  position: absolute;
+  width: 100%;
+  height: 350%;
+  bottom: 0;
+}
+
+.article-weeks__title {
+  padding: 0;
+  margin: 50px 0 0;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=article-of-week.css.map */

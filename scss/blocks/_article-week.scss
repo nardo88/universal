@@ -1,0 +1,85 @@
+.article-weeks {
+    width: 100%;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 60px;
+
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+    }
+
+    // .article-weeks__bg
+
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 350%;
+        bottom: 0;
+        background: url(../img/article-of-week/bg.jpg) no-repeat bottom;
+        background-size: cover;
+        
+    }
+
+    // .article-weeks__title
+
+    &__title {
+        padding: 0;
+        margin: 50px auto 0;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 946px;
+    }
+
+    // .article-weeks__link
+
+    &__link {
+        background: #4592FF;
+        border-radius: 20px;
+        min-width: 154px;
+        padding: 10px 20px;
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin: 25px 0 0;
+        &:after{
+            content: '';
+            width: 15px;
+            height: 7px;
+            background: url(../img/main/Arrow.svg) no-repeat center;
+            background-size: contain;
+            display: inline-block;
+            margin-left: 8px;
+
+        }
+    }
+}
+

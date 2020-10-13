@@ -839,7 +839,7 @@ body {
   height: 13px;
   display: inline-block;
   vertical-align: middle;
-  background: url(../../img/articles/Heart.svg) no-repeat center;
+  background: url(../img/articles/Heart.svg) no-repeat center;
   margin-right: 5px;
 }
 
@@ -934,7 +934,7 @@ body {
   height: 17px;
   display: inline-block;
   vertical-align: middle;
-  background: url(../../img/articles/Download.svg) no-repeat center;
+  background: url(../img/articles/Download.svg) no-repeat center;
   -webkit-background-size: cover;
           background-size: cover;
   margin-right: 11px;
@@ -1181,6 +1181,106 @@ body {
   transition: .3s;
 }
 
+.article-weeks {
+  width: 100%;
+  height: 270px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.article-weeks:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35)));
+  background: -webkit-linear-gradient(bottom, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
+  background: -o-linear-gradient(bottom, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.article-weeks__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.article-weeks__bg {
+  position: absolute;
+  width: 100%;
+  height: 350%;
+  bottom: 0;
+  background: url(../img/article-of-week/bg.jpg) no-repeat bottom;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.article-weeks__title {
+  padding: 0;
+  margin: 50px auto 0;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 946px;
+}
+
+.article-weeks__link {
+  background: #4592FF;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  min-width: 154px;
+  padding: 10px 20px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 25px 0 0;
+}
+
+.article-weeks__link:after {
+  content: '';
+  width: 15px;
+  height: 7px;
+  background: url(../img/main/Arrow.svg) no-repeat center;
+  -webkit-background-size: contain;
+          background-size: contain;
+  display: inline-block;
+  margin-left: 8px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1000px;
@@ -1347,13 +1447,17 @@ body {
   .main-article__autor-text {
     display: none;
   }
+  .article-weeks__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 @media (max-width: 975px) {
   .articles__wrapper {
-    -ms-grid-rows: (170px)[8];
+    -ms-grid-rows: (170px)[7];
     -ms-grid-columns: (1fr)[2];
-        grid-template: repeat(8, 170px)/repeat(2, 1fr);
+        grid-template: repeat(7, 170px)/repeat(2, 1fr);
   }
   .main-article {
     -ms-grid-column: span 1;
@@ -1393,7 +1497,7 @@ body {
             flex-basis: 100%;
     max-width: 100%;
     margin-bottom: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #4B5157;
     padding: 20px 0px;
     border-right: none;
   }
@@ -1420,6 +1524,10 @@ body {
   }
   .little-news {
     margin-top: 90px;
+  }
+  .article-weeks__title {
+    font-size: 25px;
+    line-height: 35px;
   }
 }
 
@@ -1463,6 +1571,9 @@ body {
     -ms-grid-row: 9;
         grid-row-start: 9;
     grid-row-end: 10;
+  }
+  .article-weeks__bg {
+    height: 500%;
   }
 }
 
@@ -1519,6 +1630,10 @@ body {
   .topic-article__info {
     margin-top: 50px;
   }
+  .article-weeks__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1559,6 +1674,9 @@ body {
 
 @media (max-width: 320px) {
   .topic-article__title {
+    font-size: 18px;
+  }
+  .article-weeks__title {
     font-size: 18px;
   }
 }
