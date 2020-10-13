@@ -25,7 +25,7 @@ tabItem.forEach((item, index) => {
         tabContent[index].classList.add('active-tab')
         tabItem[index].classList.add('active-item')
 
-        if (window.innerWidth < 680){
+        if (window.innerWidth <= 680){
             recommendationList.classList.toggle('recommendation__list--open')
         }
 
@@ -46,3 +46,14 @@ window.addEventListener('scroll', () => {
 
     articleWeeksBg.style.bottom = value * - 0.3 + 'px'
 })
+
+// bookmarks
+
+const newsBookmark = document.querySelectorAll('.news__bookmark'),
+    newsBookmarkSvg = document.querySelectorAll('.news__bookmark-svg');
+
+    newsBookmark.forEach((item, i) => {
+        item.addEventListener('click', () => {
+            newsBookmarkSvg[i].classList.toggle('red-svg')
+        })
+    })
