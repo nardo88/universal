@@ -33,7 +33,6 @@ tabItem.forEach((item, index) => {
 })
 
 recommendationTitle.addEventListener('click', () => {
-    console.log(1);
     recommendationList.classList.toggle('recommendation__list--open')
 })
 
