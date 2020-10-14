@@ -11,3 +11,79 @@
 body{
     background: #E5E5E5;
 }
+
+@media(hover: hover) and (pointer: fine) {
+
+   .header__nav-link:hover{
+        color: #c5c3c3;
+       
+   }
+   .topic-article__link:hover{
+        background: #1a57ac;
+   }
+   .hot-main__link:hover{
+    background: #1a57ac;
+
+   }
+   .article-weeks__link:hover{
+    background: #1a57ac;
+
+   }
+   .hot-slider__link:hover {
+        background: #1a57ac;
+
+    }
+
+    .newsletter__btn:hover{
+        background: #1a57ac;
+
+    }
+  
+
+   .little-news__link:hover{
+    color: #c5c3c3;
+
+   }
+
+   .popular__link:hover{
+    color: #3DC47E;
+    background: #ffffff;
+   }
+
+   .tags__link:hover{
+    color: #fff;
+    background: #262D33;
+   }
+
+   .main-article__title:hover{
+        color: #6d7072;
+   }
+
+   .any-article__title:hover{
+    color: #6d7072;
+
+   }
+
+   .second-article__title:hover{
+    color: #6d7072;
+
+   }
+
+   .hot-any__title:hover{
+    color: #6d7072;
+
+   }
+   .footer__nav-link:hover{
+    color: #6d7072;
+
+   }
+
+   .popular__title:hover{
+    color: #c5c3c3;
+   }
+
+   .categories__list-item:hover{
+       color: #000;
+       font-weight: 600;
+   }
+}

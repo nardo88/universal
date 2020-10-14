@@ -57,3 +57,22 @@ const newsBookmark = document.querySelectorAll('.news__bookmark'),
             newsBookmarkSvg[i].classList.toggle('red-svg')
         })
     })
+
+
+    // слайдер
+
+   const slider = document.querySelector('.hot-slider__container')
+
+   let customSlider = new Swiper(slider, {
+       sliderClass: 'hot-slider__item',
+       wrapperClass: 'hot-slider__wrapper',
+       loop: true,
+       pagination: {
+        el: '.hot-slider__pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      autoplay: {
+        delay: 2000,
+      },
+   })
