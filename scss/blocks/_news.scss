@@ -26,6 +26,10 @@
         border-bottom: 1px solid #D9DADB;
         position: relative;
 
+        &:last-child{
+            border-bottom: none;
+        }
+
     }
 
     // .news__img
