@@ -1,0 +1,49 @@
+.thankyou {
+    margin-top: 50px;
+    padding: 50px 0;
+
+    // .thankyou__title
+
+    &__title {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #262D33;
+    }
+
+    // .thankyou__link
+
+    &__link {
+        background: #4592FF;
+        transition: .3s;
+        border-radius: 20px;
+        min-width: 154px;
+        padding: 10px 20px;
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin: 25px 0 0;
+        &:after{
+            content: '';
+            width: 15px;
+            height: 7px;
+            background: url(../img/main/Arrow.svg) no-repeat center;
+            background-size: contain;
+            display: inline-block;
+            margin-left: 8px;
+
+        }
+    }
+}
+

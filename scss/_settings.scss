@@ -12,9 +12,8 @@ body{
     background: #E5E5E5;
 }
 
-@media(hover: hover) and (pointer: fine) {
-
-   .header__nav-link:hover{
+@media (min-width: 992px){
+    .header__nav-link:hover{
         color: #c5c3c3;
        
    }
@@ -26,17 +25,19 @@ body{
 
    }
    .article-weeks__link:hover{
-    background: #1a57ac;
+        background: #1a57ac;
 
    }
    .hot-slider__link:hover {
         background: #1a57ac;
-
     }
 
     .newsletter__btn:hover{
         background: #1a57ac;
 
+    }
+    .thankyou__link:hover{
+        background: #1a57ac;
     }
   
 
@@ -45,10 +46,7 @@ body{
 
    }
 
-   .popular__link:hover{
-    color: #3DC47E;
-    background: #ffffff;
-   }
+   
 
    .tags__link:hover{
     color: #fff;
@@ -86,4 +84,57 @@ body{
        color: #000;
        font-weight: 600;
    }
+
+   .news__title:hover{
+    color: #6d7072;
+   }
+
+   .fresh-news__caption:hover{
+    color: #000;
+    font-weight: 600;
+   }
+
+   .social__link{
+        &--facebook{
+            &:hover{
+                background: white;
+                border: 1px solid #4267B2;
+            }
+            &:hover .svg-link {
+                fill: #4267B2;
+            }
+        }
+
+        &--twitter{
+            &:hover{
+                background: white;
+                border: 1px solid #1DA1F2;
+            }
+            &:hover .svg-link {
+                fill: #1DA1F2;
+            }
+        }
+
+        &--youtube{
+            &:hover{
+                background: white;
+                border: 1px solid #FF0000;
+            }
+            &:hover .svg-link {
+                fill: #FF0000;
+            }
+        }
+
+        &--instagram{
+            &:hover{
+                background: white;
+                border: 1px solid #262626;
+            }
+            &:hover .svg-link {
+                fill: #262626;
+            }
+        }
+   }
 }
+
+

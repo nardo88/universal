@@ -11,7 +11,7 @@
 }
 
 .main-article {
-
+    position: relative;
     grid-column-start: span 2;
     grid-row-start: span 2;
     border-radius: 10px;
@@ -23,7 +23,7 @@
     &__top {
         display: flex;
         padding-left: 35px;
-        border-bottom: 1px solid #D9DADB;
+        
     }
 
     // .main-article__info
@@ -75,7 +75,6 @@
         font-size: 14px;
         line-height: 20px;
         color: #4B5157;
-        margin-bottom: 49px;
     }
 
     // .main-article__image
@@ -99,6 +98,10 @@
         padding: 12px 35px;
         display: flex;
         align-items: center;
+        border-top: 1px solid #D9DADB;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 
     // .main-article__avatar
@@ -559,7 +562,7 @@
     // .tags__content
 
     &__content {
-        padding: 24px 25px 0;
+        padding: 24px 25px 24px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -630,48 +633,26 @@
 
         &--facebook{
             background: #4267B2;
-            &:hover{
-                background: white;
-                border: 1px solid #4267B2;
-            }
-            &:hover .svg-link {
-                fill: #4267B2;
-            }
+          
         }
 
         &--twitter{
             background: #1DA1F2;
-            &:hover{
-                background: white;
-                border: 1px solid #1DA1F2;
-            }
-            &:hover .svg-link {
-                fill: #1DA1F2;
-            }
+           
         }
 
         &--youtube{
             background: #FF0000;
-            &:hover{
-                background: white;
-                border: 1px solid #FF0000;
-            }
-            &:hover .svg-link {
-                fill: #FF0000;
-            }
+           
         }
 
         &--instagram{
             background: #262626;
-            &:hover{
-                background: white;
-                border: 1px solid #262626;
-            }
-            &:hover .svg-link {
-                fill: #262626;
-            }
+            
         }
     }
+
+
 }
 
 .svg-link{

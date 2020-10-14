@@ -461,6 +461,12 @@
            
         }
     }
+    .article-weeks{
+        &__bg{
+            height: 500%;
+        }
+     
+    } 
 
 }
 
@@ -552,6 +558,9 @@
         &__bg{
             height: 500%;
         }
+        &__link{
+            margin: 70px 0 0;
+        }
     } 
 
     .news{
@@ -624,6 +633,8 @@
             }
         }
     }
+
+    
 }
 
 
@@ -693,6 +704,9 @@
         &__title{
             font-size: 20px;
             line-height: 25px;
+        }
+        &__link{
+            margin: 75px 0 0;
         }
     }
     .little-news {
@@ -839,6 +853,20 @@
     .footer__label {
         margin-top: 10px;
     }
+
+    .thankyou{
+        &__title{
+            font-size: 20px;
+            line-height: 24px;
+            margin: 0 0 0 0;
+        } 
+    }
+
+    .article-weeks{
+        &__link{
+            margin: 60px 0 0;
+        }
+    } 
 
 }
 
