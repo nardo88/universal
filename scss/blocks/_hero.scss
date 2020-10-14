@@ -1,0 +1,291 @@
+.hero {
+    background: url(../img/hero/hero-bg.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    margin-top: 70px;
+
+    &:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75));
+    }
+
+
+    // .hero__wrapper
+
+    &__wrapper {
+        padding-top: 130px;
+        padding-left: 91px;
+        padding-bottom: 72px;
+        position: relative;
+        z-index: 10;
+    }
+
+    // .hero__categories
+
+    &__categories {
+        position: absolute;
+        top: 63px;
+        z-index: 20;
+        color: #fff;
+        left: 91px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #4592FF;
+    }
+
+    // .hero__navigation
+
+    &__navigation {
+        position: absolute;
+        top: 60px;
+        right: 115px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+
+    }
+
+    &__bookmark{
+        position: absolute;
+        left: 0;
+        top: 184px;
+    }
+
+    // .hero__nav-link
+
+    &__nav-link {
+        text-decoration: none;
+        color: inherit;
+        &--home{
+            margin-right: 32px;
+            &:before{
+                content: '';
+                width: 18px;
+                height: 16px;
+                display: inline-block;
+                vertical-align: middle;
+                background: url(../img/hero/Home.svg) no-repeat center;
+                margin-right: 6px;
+            }
+        }
+
+        &--prev{
+            margin-right: 20px;
+
+            &:before{
+                content: '';
+                width: 18px;
+                height: 16px;
+                display: inline-block;
+                vertical-align: middle;
+                background: url(../img/hero/Arrow.svg) no-repeat center;
+                margin-right: 6px;
+            }
+
+        }
+        &--next{
+            
+
+            &:after{
+                content: '';
+                margin-left: 8px;
+                width: 18px;
+                height: 16px;
+                display: inline-block;
+                vertical-align: middle;
+                background: url(../img/hero/Next.svg) no-repeat center;
+            }
+
+        }
+
+    }
+
+    // .hero__title
+
+    &__title {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 70px;
+        color: #FFFFFF;
+        max-width: 750px;
+        text-align: left;
+        margin-bottom: 30px;
+
+    }
+
+    // .hero__description
+
+    &__description {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.85;
+        max-width: 632px;
+        margin-bottom: 43px;
+    }
+
+    // .hero__bottom
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+        opacity: 0.85;
+    }
+
+    // .hero__date
+
+    &__date {
+        margin-right: 21px;
+
+        &:before{
+            content: '';
+            width: 13px;
+            height: 13px;
+            display: inline-block;
+            vertical-align: middle;
+            background: url(../img/hero/Clock.svg) no-repeat center;
+            margin-right: 6px;
+        }
+    }
+
+    // .hero__likes
+
+    &__likes {
+        margin-right: 20px;
+        text-decoration: none;
+        color: inherit;
+        &:before{
+            content: '';
+            width: 13px;
+            height: 13px;
+            display: inline-block;
+            vertical-align: middle;
+            background: url(../img/hero/Heart.svg) no-repeat center;
+            margin-right: 6px;
+        }
+    }
+
+    // .hero__comments
+
+    &__comments {
+        text-decoration: none;
+        color: inherit;
+        &:before{
+            content: '';
+            width: 13px;
+            height: 13px;
+            display: inline-block;
+            vertical-align: middle;
+            background: url(../img/hero/Comment.svg) no-repeat center;
+            margin-right: 6px;
+        }
+    }
+
+    // .hero__card
+
+    &__card {
+        width: 263px;
+        background: #fff;
+        border: 1px solid #D9DADB;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 115px;
+        bottom: -196px;
+    }
+
+    // .hero__avatar
+
+    &__avatar {
+        margin-top: 35px;
+        margin-bottom: 15px;
+        width: 95px;
+        height: 95px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    // .hero__name
+
+    &__name {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        color: #262D33;
+        margin-bottom: 5px;
+    }
+
+    // .hero__profession
+
+    &__profession {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #4B5157;
+        margin-bottom: 15px;
+    }
+
+    // .hero__articles
+
+    &__articles {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+        color: #262D33;
+        margin-bottom: 20px;
+    }
+
+    // .hero__page
+
+    &__page {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 15px 20px;
+        border-top: 1px solid #D9DADB;
+        text-decoration: none;
+
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+        color: #262D33;
+    }
+}
+

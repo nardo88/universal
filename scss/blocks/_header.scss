@@ -7,6 +7,10 @@
     height: 70px;
     z-index: 100;
 
+    &--article{
+        background: #FFFFFF;
+    }
+
     // .header__wrapper
 
     &__wrapper {
@@ -43,6 +47,10 @@
         transition: .3s;
         &:last-child{
             margin-right: 0;
+        }
+
+        &--article{
+            color: #939699;
         }
     }
 
@@ -89,6 +97,10 @@
         outline: none;
         padding-left: 25px;
         padding-right: 55px;
+
+        &--article{
+            background: #F5F5F5;
+        }
 
 
         &::placeholder{
