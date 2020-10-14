@@ -3137,6 +3137,13 @@ body {
   .categories__title {
     margin: 20px 0 15px;
   }
+  .footer__rights {
+    font-size: 10px;
+    padding: 18px 0;
+  }
+  .footer__label {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 320px) {
