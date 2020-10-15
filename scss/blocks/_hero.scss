@@ -1,8 +1,21 @@
 .hero {
-    background: url(../img/hero/hero-bg.jpg) no-repeat center;
-    background-size: cover;
+    // background: url(../img/hero/hero-bg.jpg) no-repeat center;
+    // background-size: cover;
     position: relative;
     margin-top: 70px;
+    overflow: hidden;
+
+    &__bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 
     &:after{
         content: '';
@@ -70,6 +83,7 @@
 
     &__nav-link {
         text-decoration: none;
+        transition: 0.3s;
         color: inherit;
         &--home{
             margin-right: 29px;

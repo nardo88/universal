@@ -108,6 +108,10 @@ body{
    .news__title:hover{
     color: #6d7072;
    }
+   .hero__nav-link:hover{
+    color: #6d7072;
+
+   }
 
    .fresh-news__caption:hover{
     color: #000;
@@ -121,6 +125,11 @@ body{
 
    .support__link:hover{
     background: #1a57ac;
+   }
+
+   .think-about__btn:hover{
+    background: #1a57ac;
+
    }
    .social__link{
         &--facebook{

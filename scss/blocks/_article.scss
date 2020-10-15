@@ -187,8 +187,9 @@
 
 
 .aside-article {
-    margin-top: 179px;
+    margin-top: 180px;
     margin-left: -1px;
+    letter-spacing: 0.31px;
 
     // .aside-article__title
 
@@ -210,7 +211,7 @@
         height: 180px;
         object-fit: cover;
         display: block;
-        margin-bottom: 15px;
+        margin-bottom: 17px;
     }
 
     // .aside-article__subtitle
@@ -221,7 +222,8 @@
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
-        line-height: 25px;
+        line-height: 26px;
+        letter-spacing: 0.37px;
         color: #262D33;
         text-decoration: none;
         max-width: 263px;
@@ -265,7 +267,7 @@
             vertical-align: middle;
             margin-right: 5px;
             display: inline-block;
-            background: url(../../img/aside/Eye.svg) no-repeat center;
+            background: url(../img/aside/Eye.svg) no-repeat center;
         }
     }
 
@@ -279,7 +281,7 @@
             vertical-align: middle;
             margin-right: 5px;
             display: inline-block;
-            background: url(../../img/aside/Comment.svg) no-repeat center;
+            background: url(../img/aside/Comment.svg) no-repeat center;
         }
     }
 }
@@ -287,7 +289,7 @@
 
 .quote {
     margin-top: 80px;
-    margin-bottom: 46px;
+    margin-bottom: 45px;
     position: relative;
 
     &:before{
@@ -297,7 +299,7 @@
         position: absolute;
         top: -22px;
         left: -21px;
-        background: url(../../img/article/Quote.png) no-repeat center;
+        background: url(../img/article/Quote.png) no-repeat center;
         background-size: cover;
     }
 
@@ -312,7 +314,8 @@
         font-size: 25px;
         line-height: 30px;
         color: #262D33;
-        max-width: 615px;
+        max-width: 625px;
+        letter-spacing: -0.35px;
     }
 }
 
@@ -379,7 +382,7 @@
             display: inline-block;
             vertical-align: middle;
             margin-right: 9px;
-            background: url(../../img/support/Heart.svg) no-repeat center;
+            background: url(../img/support/Heart.svg) no-repeat center;
         }
     }
 
@@ -399,7 +402,7 @@
             display: inline-block;
             vertical-align: middle;
             margin-right: 9px;
-            background: url(../../img/support/Facebook.svg) no-repeat center;
+            background: url(../img/support/Facebook.svg) no-repeat center;
 
         }
     }
@@ -420,7 +423,7 @@
             display: inline-block;
             vertical-align: middle;
             margin-right: 9px;
-            background: url(../../img/support/Twitter.svg) no-repeat center;
+            background: url(../img/support/Twitter.svg) no-repeat center;
 
         }
     }

@@ -21,7 +21,7 @@
         height: 180px;
         object-fit: cover;
         border-radius: 10px;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
     }
 
     // .any-articles__title
@@ -61,7 +61,7 @@
             vertical-align: middle;
             margin-right: 5px;
             display: inline-block;
-            background: url(../../img/aside/Eye.svg) no-repeat center;
+            background: url(../img/aside/Eye.svg) no-repeat center;
         }
     }
 
@@ -75,10 +75,9 @@
             vertical-align: middle;
             margin-right: 5px;
             display: inline-block;
-            background: url(../../img/aside/Comment.svg) no-repeat center;
+            background: url(../img/aside/Comment.svg) no-repeat center;
         }
     }
 }
-.container {
-}
+
 

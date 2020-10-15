@@ -82,6 +82,7 @@
 
     &__list {
         padding: 0;
+        margin-bottom: 0;
         list-style-type: none;
 
         li:nth-child(n+4){
@@ -190,7 +191,7 @@
             vertical-align: middle;
             display: inline-block;
             margin-right: 5px;
-            background: url(../../img/articles/Comment.svg) center;
+            background: url(../img/articles/Comment.svg) center;
 
         }
     }
@@ -269,10 +270,130 @@
             content: '';
             width: 14px;
             height: 14px;
+            margin-left: 30px;
             display: inline-block;
             vertical-align: middle;
-            margin-right: 8px;
-            background: url(../../img/comments/Loading.svg) center;
+            margin-right: 4px;
+            background: url(../img/comments/Loading.svg) center;
         }
     }
 }
+
+
+.think-about {
+    max-width: 847px;
+    margin-top: 60px;
+    background: #F5F5F5;
+    border-radius: 10px;
+    padding: 30px 40px 35px 30px;   
+    margin-bottom: 29px; 
+
+    // .think-about__title
+
+    &__title {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        color: #262D33;
+        margin: 0 0 15px;
+    }
+
+    // .think-about__content
+
+    &__content {
+        width: 100%;
+        display: flex;
+    }
+
+    // .think-about__img
+
+    &__img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+        margin-top: 38px;
+    }
+
+    // .think-about__form
+
+    &__form {
+        width: 100%;
+        position: relative;
+        &:before{
+            content: '';
+            width: 12px;
+            display: block;
+            height: 12px;
+            background: #FFFFFF;
+            border: 1px solid #D9DADB;
+            border-top: none;
+            border-right: none;
+            position: absolute;
+            left: -6px;
+            top: 68px;
+            transform: rotate(45deg);
+            z-index: 1000;
+
+        }
+
+    }
+
+    // .think-about__textarea
+
+    &__textarea {
+        width: 585px;
+        height: 130px;
+        resize: none; 
+        background: #FFFFFF;
+        border: 1px solid #D9DADB;
+        box-sizing: border-box;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #4B5157;
+        padding: 10px;
+        outline: none;
+
+        
+    }
+
+    // .think-about__btn
+
+    &__btn {
+        background: #4592FF;
+        margin-top: 12px;
+        margin-left: 6px;
+        border-radius: 20px;
+        padding: 10px 20px;
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: .3s;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+        border: none;
+        outline: none;
+
+        &:after{
+            content: '';
+            width: 15px;
+            height: 7px;
+            background: url(../img/main/Arrow.svg) no-repeat center;
+            background-size: contain;
+            display: inline-block;
+            margin-left: 8px;
+
+        }
+    }
+}
+

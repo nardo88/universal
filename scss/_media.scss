@@ -217,6 +217,12 @@
         margin-bottom: 0;
     }
 
+    .think-about{
+        &__textarea{
+            width: 100%;
+        }
+    }
+
 }
 
 @media (max-width: 992px){
@@ -901,6 +907,18 @@
             }
         }
     }
+
+    .think-about{
+        &__img{
+            width: 45px;
+            height: 45px;
+        }
+
+        &__title{
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
     
 }
 
@@ -1230,6 +1248,34 @@
     }
     .aside-article__description{
         max-width: 100%;
+    }
+
+    .think-about__content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .think-about{
+        &__title{
+            margin: 0;
+        }
+    }
+    .think-about__img{
+        margin: 20px 0 20px 0;
+    }
+
+    .think-about__form:before{
+        transform: rotate(135deg);
+        left: 48%;
+        top: -6px;
+    }
+
+    .think-about__title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .think-about{
+        padding: 25px;
     }
 
 }

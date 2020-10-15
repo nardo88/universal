@@ -6,13 +6,23 @@ require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $email = $_POST['email'];
+$message = $_POST['message'];
 
 // Формирование самого письма
 $title = "Новое обращение Universal";
+
+if(isset($email)){
     $body = "
     <h2>Адрес для рассылки</h2>
     <b>email:</b><br>$email
     ";
+} else if (isset($message)) {
+    $body = "
+    <h2>Новое сообщение</h2>
+    <b>Сообщение:</b><br>$message
+    ";
+}
+   
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -51,8 +61,13 @@ try {
 
     // Отображение результата
     
-    echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+    // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 
 
+    if(isset($email)){
         header('Location: thankyou.html');
+    } else if (isset($message)) {
+        header('Location: message.html');
+    }
   
+    
