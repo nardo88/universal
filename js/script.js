@@ -56,7 +56,7 @@ const newsBookmark = document.querySelectorAll('.news__bookmark'),
         item.addEventListener('click', () => {
             newsBookmarkSvg[i].classList.toggle('red-svg')
         })
-    })
+})
 
 
     // слайдер
@@ -64,7 +64,7 @@ const newsBookmark = document.querySelectorAll('.news__bookmark'),
    const slider = document.querySelector('.hot-slider__container')
 
    let customSlider = new Swiper(slider, {
-       sliderClass: 'hot-slider__item',
+       slideClass: 'hot-slider__item',
        wrapperClass: 'hot-slider__wrapper',
        loop: true,
        pagination: {

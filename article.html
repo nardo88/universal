@@ -28,9 +28,9 @@
     <script defer src="js/dinami-adaptive.js"></script>
     <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="js/lazysizes.min.js" async></script>
-    <script defer src="js/script.js"></script>
+    <script defer src="js/article.js"></script>
 </head>
-<body>
+<body class="body-article">
 
     <header class="header header--article">
         <div class="container">
@@ -51,13 +51,13 @@
                 </form>
 
                 <button class="header__burger-btn burger-button">
-                    <span class="burger-button__item"></span>
+                    <span class="burger-button__item burger-button__item--article"></span>
                 </button>
             </div>
         </div>
     </header>
 
-    <section class="hero">
+    <div class="hero">
         <div class="container">
             <div class="hero__wrapper">
                 <span class="hero__categories">Новости</span>
@@ -75,21 +75,352 @@
                     <a href="#!" class="hero__comments">19</a>
                 </div> 
 
-                <div class="hero__card">
-                    <img src="img/hero/hero-avatar.png" alt="avatar autor" class="hero__avatar">
-                    <span class="hero__name">Мира Стахова</span>
-                    <span class="hero__profession">Фрилансер</span>
-                    <span class="hero__articles">82 статьи</span>
-                    <a href="#!" class="hero__page">Страница автора</a>
-                </div>
+                
                 <a href="#!" class="hero__bookmark">
-                    <svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 0.5H18.5C20.1569 0.5 21.5 1.84315 21.5 3.5V27.5L11.1424 20L0.5 27.5V3.5C0.5 1.84315 1.84315 0.5 3.5 0.5Z" fill="white"/>
+                    <svg  width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="bookmark-svg" fill-rule="evenodd" clip-rule="evenodd" d="M3.5 0.5H18.5C20.1569 0.5 21.5 1.84315 21.5 3.5V27.5L11.1424 20L0.5 27.5V3.5C0.5 1.84315 1.84315 0.5 3.5 0.5Z" fill="white"/>
                         </svg>
                 </a>
             </div>
         </div>
+    </div>
+    <section class="article">
+        <div class="container">
+            <div class="article__wrapper">
+                <div class="article__content">
+                    <p class="article__text article__text--first-char">мИдейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. 
+                        <br>
+                        Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
+                    </p>
+                    <h2 class="article__subtitle">Введение НПД в РФ</h2>
+                    <p class="article__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации </p>
+                    <p class="article__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, </p>
+                    <p class="article__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации </p>
+                </div>
+                <aside class="article__aside">
+                    <div data-da="article__content,first,1050" class="article__card">
+                        <img src="img/hero/hero-avatar.png" alt="avatar autor" class="article__avatar">
+                        <span class="article__name">Мира Стахова</span>
+                        <span class="article__profession">Фрилансер</span>
+                        <span class="article__articles">82 статьи</span>
+                        <a href="#!" class="article__page">Страница автора</a>
+                    </div>
+                </aside>
+                
+                
+    
+    
+            </div>
+        </div>
+        
     </section>
+
+
+    <div class="container">
+        <div class="article-slider">
+
+            <div class="article-slider__container">
+                <div class="article-slider__wrapper">
+
+                    <div class="article-slider__item">
+                        <img src="img/article-slider/article-slide.png" alt="slide image" class="article-slider__img">
+                        <div class="article-slider__bottom">
+                            <div class="article-slider__description">
+                                <p class="article-slider__text">
+                                    Geostatistics deal with quantitative data analysis, specifically the application of statistical methodology
+                                </p>
+                            </div>
+                            <div class="article-slider__author">
+                                <img src="img/article-slider/avatar.png" alt="avatar" class="article-slider__avatar">
+                                <div class="article-slider__info">
+                                    <span class="article-slider__author-name">Андрей Вашигаев</span>
+                                    <span class="article-slider__author-profession">Фотограф</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="article-slider__item">
+                        <img src="img/article-slider/article-slide-1.jpg" alt="slide image" class="article-slider__img">
+                        <div class="article-slider__bottom">
+                            <div class="article-slider__description">
+                                <p class="article-slider__text">
+                                    Geostatistics deal with quantitative data analysis, specifically the application of statistical methodology
+                                </p>
+                            </div>
+                            <div class="article-slider__author">
+                                <img src="img/article-slider/avatar.png" alt="avatar" class="article-slider__avatar">
+                                <div class="article-slider__info">
+                                    <span class="article-slider__author-name">Андрей Вашигаев</span>
+                                    <span class="article-slider__author-profession">Фотограф</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="article-slider__item">
+                        <img src="img/article-slider/article-slide-2.jpg" alt="slide image" class="article-slider__img">
+                        <div class="article-slider__bottom">
+                            <div class="article-slider__description">
+                                <p class="article-slider__text">
+                                    Geostatistics deal with quantitative data analysis, specifically the application of statistical methodology
+                                </p>
+                            </div>
+                            <div class="article-slider__author">
+                                <img src="img/article-slider/avatar.png" alt="avatar" class="article-slider__avatar">
+                                <div class="article-slider__info">
+                                    <span class="article-slider__author-name">Андрей Вашигаев</span>
+                                    <span class="article-slider__author-profession">Фотограф</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <button class="article-slider__prev"></button>
+            <button class="article-slider__next"></button>
+    
+        </div>
+    </div>
+
+    <div class="article">
+        <div class="container">
+            <div class="article__wrapper">
+                <div class="article__content article__content--second">
+                    <p class="article__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.</p>
+                    <p class="article__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации </p>
+                    <p class="article__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Таким образом консультация с широким активом способствует подготовки и реализации направлений </p>
+                    <div class="quote">
+                        <p class="quote__text">Таким образом консультация с широким активом способствует подготовки и реализации направлений прогрессивного развития. Не следует, однако забывать, что новая модель организационной деятельности в значительной степени обуславливает.</p>
+                    </div>
+                    <p class="article__text">Таким образом консультация с широким активом способствует подготовки и реализации направлений прогрессивного развития. Не следует, однако забывать, что новая модель организационной деятельности в значительной степени обуславливает создание модели развития. Равным образом дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке форм развития. Разнообразный и богатый опыт постоянный количественный </p>
+                    <p class="article__text">Задача организации, в особенности же консультация с широким активом требуют от нас анализа новых предложений. Повседневная практика показывает, что постоянный количественный рост и сфера нашей </p>
+
+                    <div class="article__tags">
+                        <a href="#!" class="article__tag-link">Travel</a>
+                        <a href="#!" class="article__tag-link">Destinations</a>
+                        <a href="#!" class="article__tag-link">Nature</a>
+                        <a href="#!" class="article__tag-link">World</a>
+                        <a href="#!" class="article__tag-link">Alaska</a>
+
+                    </div>
+
+                    <div class="support">
+                        <h3 class="support__title">Поддержите репостом</h3>
+                        <div class="support__links">
+                            <a href="#!" class="support__link support__link--like">Like it<span>42</span></a>
+                            <a href="#!" class="support__link support__link--facebook">Share<span>80</span></a>
+                            <a href="#!" class="support__link support__link--tweeter">Tweet<span>33</span></a>
+                        </div>
+                    </div>
+                  
+                </div>
+                <aside class="article__aside">
+                    <div class="aside-article">
+                        <h2 class="aside-article__title">Материал по теме</h2>
+                        <img src="img/aside/aside-article-img.png" alt="aside image" class="aside-article__img">
+                        <a href="#!" class="aside-article__subtitle">20+ инструментов<br>для js-разработчика</a>
+                        <p class="aside-article__description">Узнайте, какими инструментами вы еще не пользовались, а могли бы. Эти инструменты помогут вам ускорить свою работу или повысить ее качество. Все инструменты собраны в виде...</p>
+                        <div class="aside-article__bottom">
+                            <span class="aside-article__watches">1,623</span>
+                            <span class="aside-article__comments">102</span>
+                        </div>
+                    </div>
+                </aside>
+                
+                
+    
+    
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="any-articles">
+        <div class="container">
+            <div class="any-articles__wrapper">
+
+                <div class="any-articles__item">
+                    <img src="img/any-articles/item-1.png" alt="arcicle image" class="any-articles__image">
+                    <a href="#!" class="any-articles__title">Техника работы по помидоркам — это как? </a>
+                    <div class="any-articles__bottom">
+                        <span class="any-articles__watches">1,904</span>
+                            <span class="any-articles__comments">82</span>
+                    </div>
+                </div>
+
+                <div class="any-articles__item">
+                    <img src="img/any-articles/item-2.png" alt="arcicle image" class="any-articles__image">
+                    <a href="#!" class="any-articles__title">Вопросы на собеседовании для джуна</a>
+                    <div class="any-articles__bottom">
+                        <span class="any-articles__watches">2,873</span>
+                            <span class="any-articles__comments">982</span>
+                    </div>
+                </div>
+
+                <div class="any-articles__item">
+                    <img src="img/any-articles/item-3.png" alt="arcicle image" class="any-articles__image">
+                    <a href="#!" class="any-articles__title">Список стран, куда можно улететь</a>
+                    <div class="any-articles__bottom">
+                        <span class="any-articles__watches">821</span>
+                            <span class="any-articles__comments">30</span>
+                    </div>
+                </div>
+
+                <div class="any-articles__item">
+                    <img src="img/any-articles/item-4.png" alt="arcicle image" class="any-articles__image">
+                    <a href="#!" class="any-articles__title">В вашем портфолио могут быть фейковые работы</a>
+                    <div class="any-articles__bottom">
+                        <span class="any-articles__watches">5,030</span>
+                            <span class="any-articles__comments">495</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="comments">
+        <div class="container">
+            <div class="comments__wrapper">
+                <div class="comments__header">
+                    <h2 class="comments__title">Комментарии <span class="comments__count">19</span></h2>
+                    <a href="#!" class="comments__link">Добавить комментарий</a>
+                </div>
+                <div class="comments__content">
+                    <ul class="comments__list">
+                        <li class="comments__item">
+                            <div class="comments__item-body">
+                                <img src="img/comments/avatar-1.png" alt="" class="comments__avatar">
+                                <div class="comments__inner">
+                                    <span class="comments__name">Михаил Степашин</span>
+                                    <span class="comments__date">17 июля, 18:38</span>
+                                    <p class="comments__text">Хочу заметить, что автор этой статьи не написал, что не все могут получить статус самозанятого. Этот режим еще не ввели во всех регионах. Но если в вашем регионе есть, то поздравляю.</p>
+                                    <div class="comments__bottom">
+                                      <a href="#!" class="comments__answer">Ответить</a>
+                                      <a href="#!" class="comment__like"><img src="img/comments/Thumb.png" alt="trumb"></a>
+                                      <span class="comments__count-like comments__count-like--plus">+10</span>
+                                      <a href="#!" class="comments__like"><img src="img/comments/ThumbDown.png" alt="trumb"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="comments__sub">
+                                <li class="comments__item">
+                                    <div class="comments__item-body">
+                                        <img src="img/comments/avatar-2.png" alt="" class="comments__avatar">
+                                        <div class="comments__inner">
+                                            <span class="comments__name">Мира Стахова</span>
+                                            <span class="comments__date">17 июля, 18:41</span>
+                                            <p class="comments__text">Да, спасибо за замечание. Добавлю список регионов, где этот режим уже действует и буду периодически обновлять его. Потому что обещали ввести этот режим везде.</p>
+                                            <div class="comments__bottom">
+                                                <a href="#!" class="comments__answer">Ответить</a>
+                                                <a href="#!" class="comment__like"><img src="img/comments/Thumb.png" alt="trumb"></a>
+                                                <span class="comments__count-like comments__count-like--zero">0</span>
+                                                <a href="#!" class="comments__like"><img src="img/comments/ThumbDown.png" alt="trumb"></a>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            
+                        </li>
+
+                        <li class="comments__item">
+                            <div class="comments__item-body">
+                                <img src="img/comments/avatar-3.png" alt="" class="comments__avatar">
+                                <div class="comments__inner">
+                                    <span class="comments__name">Анжела Иванова</span>
+                                    <span class="comments__date">17 июля, 18:53</span>
+                                    <p class="comments__text">Если честно, кажется, что этот налоговый режим ввели, чтобы собрать больше денег с народа. Я, конечно, понимаю, что бюджеты надо пополнять, но не лучше ли обложить налогом богатых?</p>
+                                    <div class="comments__bottom">
+                                        <a href="#!" class="comments__answer">Ответить</a>
+                                        <a href="#!" class="comment__like"><img src="img/comments/Thumb.png" alt="trumb"></a>
+                                        <span class="comments__count-like comments__count-like--minus">-3</span>
+                                        <a href="#!" class="comments__like"><img src="img/comments/ThumbDown.png" alt="trumb"></a>
+                                      </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="comments__item">
+                            <div class="comments__item-body">
+                                <img src="img/comments/avatar-4.png" alt="" class="comments__avatar">
+                                <div class="comments__inner">
+                                    <span class="comments__name">17 июля, 19:12</span>
+                                    <span class="comments__date">17 июля, 18:38</span>
+                                    <p class="comments__text">Такой режим уже давно работает в продвинутых странах, почему его ввели только сейчас, непонятно. Хотелось бы, чтобы это все заработало в моем регионе, буду в числе первых!</p>
+                                    <div class="comments__bottom">
+                                        <a href="#!" class="comments__answer">Ответить</a>
+                                        <a href="#!" class="comment__like"><img src="img/comments/Thumb.png" alt="trumb"></a>
+                                        <span class="comments__count-like comments__count-like--zero">0</span>
+                                        <a href="#!" class="comments__like"><img src="img/comments/ThumbDown.png" alt="trumb"></a>
+                                      </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="comments__item">
+                            <div class="comments__item-body">
+                                <img src="img/comments/avatar-1.png" alt="" class="comments__avatar">
+                                <div class="comments__inner">
+                                    <span class="comments__name">Михаил Степашин</span>
+                                    <span class="comments__date">17 июля, 18:38</span>
+                                    <p class="comments__text">Хочу заметить, что автор этой статьи не написал, что не все могут получить статус самозанятого. Этот режим еще не ввели во всех регионах. Но если в вашем регионе есть, то поздравляю.</p>
+                                    <div class="comments__bottom">
+                                        <a href="#!" class="comments__answer">Ответить</a>
+                                        <a href="#!" class="comment__like"><img src="img/comments/Thumb.png" alt="trumb"></a>
+                                        <span class="comments__count-like comments__count-like--zero">0</span>
+                                        <a href="#!" class="comments__like"><img src="img/comments/ThumbDown.png" alt="trumb"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="comments__item">
+                            <div class="comments__item-body">
+                                <img src="img/comments/avatar-1.png" alt="" class="comments__avatar">
+                                <div class="comments__inner">
+                                    <span class="comments__name">Михаил Степашин</span>
+                                    <span class="comments__date">17 июля, 18:38</span>
+                                    <p class="comments__text">Хочу заметить, что автор этой статьи не написал, что не все могут получить статус самозанятого. Этот режим еще не ввели во всех регионах. Но если в вашем регионе есть, то поздравляю.</p>
+                                    <div class="comments__bottom">
+                                        <a href="#!" class="comments__answer">Ответить</a>
+                                        <a href="#!" class="comment__like"><img src="img/comments/Thumb.png" alt="trumb"></a>
+                                        <span class="comments__count-like comments__count-like--zero">0</span>
+                                        <a href="#!" class="comments__like"><img src="img/comments/ThumbDown.png" alt="trumb"></a>
+                                      </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="comments__item">
+                            <div class="comments__item-body">
+                                <img src="img/comments/avatar-1.png" alt="" class="comments__avatar">
+                                <div class="comments__inner">
+                                    <span class="comments__name">Михаил Степашин</span>
+                                    <span class="comments__date">17 июля, 18:38</span>
+                                    <p class="comments__text">Хочу заметить, что автор этой статьи не написал, что не все могут получить статус самозанятого. Этот режим еще не ввели во всех регионах. Но если в вашем регионе есть, то поздравляю.</p>
+                                    <div class="comments__bottom">
+                                        <a href="#!" class="comments__answer">Ответить</a>
+                                        <a href="#!" class="comment__like"><img src="img/comments/Thumb.png" alt="trumb"></a>
+                                        <span class="comments__count-like comments__count-like--zero">0</span>
+                                        <a href="#!" class="comments__like"><img src="img/comments/ThumbDown.png" alt="trumb"></a>
+                                      </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="comments__show">
+                    <button class="comments__show-all">загрузить еще</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
   
 

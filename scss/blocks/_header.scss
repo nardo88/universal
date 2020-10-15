@@ -133,6 +133,8 @@
         background: #FFFFFF;
         font-size: 0;
 
+       
+
         &:before{
             content: '';
             width: 20px;
@@ -152,6 +154,19 @@
             bottom: -7px;
             left: 0;
             text-replace: .2s;
+        }
+
+        &--article{
+            background: #262626;
+
+            &:before{
+                background: #262626;
+
+            }
+            &:after{
+                background: #262626;
+
+            }
         }
     }
 }
