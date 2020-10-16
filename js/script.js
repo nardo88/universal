@@ -77,3 +77,12 @@ const newsBookmark = document.querySelectorAll('.news__bookmark'),
         delay: 2000,
       },
    })
+
+
+   const goTop = document.querySelector('.go-top')
+
+   goTop.addEventListener('click', e => {
+       e.preventDefault()
+       console.log(1);
+       window.scrollTo({top: 0, behavior: 'smooth'})
+   })

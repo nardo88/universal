@@ -55,6 +55,7 @@
     // .any-articles__watches
 
     &__watches {
+       
         margin-right: 12px;
         &:before{
             content: '';
@@ -70,6 +71,9 @@
     // .any-articles__comments
 
     &__comments {
+        text-decoration: none;
+        transition: .3s;
+        color: inherit;
         &:before{
             content: '';
             width: 13px;

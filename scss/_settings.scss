@@ -44,15 +44,17 @@ body{
         background: #1a57ac;
     }
     
-    .any-articles__item:hover{
-        img{
-            opacity: .6;
-            
-        }
-        .any-articles__title{
+    .any-articles__image:hover{
+        opacity: .7;
+    }
+
+    .any-articles__comments:hover{
+        color: #262D33;
+        font-weight: bold;
+    }
+    .any-articles__title:hover{
         color: #6d7072;
 
-        }
     }
 
     .main-article:hover{
@@ -149,6 +151,12 @@ body{
 
    }
 
+   .go-top:hover{
+    background: #262D33;
+    color: #fff;
+    opacity: 1;
+   }
+
    .fresh-news__caption:hover{
     color: #000;
     font-weight: 600;
@@ -215,3 +223,22 @@ body{
 }
 
 
+.go-top{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    color: #262D33;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #262D33;
+    border-radius: 5px;
+    transition: .3s;
+    background: #fff;
+    opacity: .4;
+}
