@@ -217,12 +217,6 @@
         margin-bottom: 0;
     }
 
-    .think-about{
-        &__textarea{
-            width: 100%;
-        }
-    }
-
 }
 
 @media (max-width: 992px){
@@ -389,6 +383,10 @@
         &__img{
             height: 140px;
         }
+    }
+
+    .think-about__textarea{
+        width: 100%;
     }
 }
 @media (max-width: 975px){
@@ -906,17 +904,14 @@
                 background: #F5F5F5;
             }
         }
+
+        
     }
 
     .think-about{
         &__img{
             width: 45px;
             height: 45px;
-        }
-
-        &__title{
-            font-size: 16px;
-            line-height: 20px;
         }
     }
     
@@ -1080,6 +1075,32 @@
             flex-basis: 100%;
         } 
     }
+    .think-about__content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .think-about__title{
+        margin: 0;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .think-about__img{
+        margin: 20px 0;
+    }
+
+    .think-about__form:before{
+        transform: rotate(135deg);
+        top: -6px;
+        left: 48%;
+    }
+    .think-about{
+        padding: 30px 20px;
+    }
+
+
 
 }
 
@@ -1250,33 +1271,9 @@
         max-width: 100%;
     }
 
-    .think-about__content{
-        flex-direction: column;
-        align-items: center;
-    }
-    .think-about{
-        &__title{
-            margin: 0;
-        }
-    }
-    .think-about__img{
-        margin: 20px 0 20px 0;
-    }
+    
 
-    .think-about__form:before{
-        transform: rotate(135deg);
-        left: 48%;
-        top: -6px;
-    }
-
-    .think-about__title {
-        font-size: 14px;
-        line-height: 17px;
-    }
-
-    .think-about{
-        padding: 25px;
-    }
+    
 
 }
 

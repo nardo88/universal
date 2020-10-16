@@ -53,7 +53,8 @@ const newsBookmark = document.querySelectorAll('.news__bookmark'),
     newsBookmarkSvg = document.querySelectorAll('.news__bookmark-svg');
 
     newsBookmark.forEach((item, i) => {
-        item.addEventListener('click', () => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault()
             newsBookmarkSvg[i].classList.toggle('red-svg')
         })
 })

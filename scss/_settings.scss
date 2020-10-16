@@ -43,7 +43,17 @@ body{
     .thankyou__link:hover{
         background: #1a57ac;
     }
-  
+    
+    .any-articles__item:hover{
+        img{
+            opacity: .6;
+            
+        }
+        .any-articles__title{
+        color: #6d7072;
+
+        }
+    }
 
    .little-news__link:hover{
     color: #c5c3c3;
