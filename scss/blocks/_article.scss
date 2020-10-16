@@ -199,6 +199,7 @@
         font-weight: bold;
         font-size: 20px;
         line-height: 25px;
+        letter-spacing: 0;
         color: #262D33;
         margin: 0 0 20px;
     }
@@ -223,7 +224,7 @@
         font-weight: bold;
         font-size: 16px;
         line-height: 26px;
-        letter-spacing: 0.37px;
+        letter-spacing: 0;
         color: #262D33;
         text-decoration: none;
         max-width: 263px;
@@ -232,7 +233,7 @@
     // .aside-article__description
 
     &__description {
-        max-width: 271px;
+        max-width: 268px;
         font-family: Lato;
         margin: 5px 0 20px 1px;
         font-style: normal;
@@ -241,6 +242,7 @@
         line-height: 20px;
         letter-spacing: 0.04px;
         color: #4B5157;
+        letter-spacing: 0;
 
     }
 

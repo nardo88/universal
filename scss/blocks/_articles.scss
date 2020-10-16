@@ -17,6 +17,7 @@
     border-radius: 10px;
     overflow: hidden;
     background: #fff;
+    transition: .3s;
 
     // .main-article__top
 
@@ -173,6 +174,7 @@
     overflow: hidden;
     position: relative;
     padding: 23px 30px 30px 24px;
+    transition: .3s;
 
 
     // .popular__bg
@@ -449,6 +451,7 @@
 }
 .second-article {
     grid-column-start: span 1;
+    transition: 0.3s;
     grid-row-start: 3;
     grid-row-end: 5;
     border-radius: 10px;
@@ -483,7 +486,7 @@
     }
 }
 .any-article {
-
+    transition: 0.3s;
     border-radius: 10px;
     overflow: hidden;
     background: #ffffff;
